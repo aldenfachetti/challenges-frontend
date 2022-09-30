@@ -13,6 +13,7 @@
   --nav-text-color: #ffffff;
   --button-bg-color: #0052ce;
   --button-text-color: #ffffff;
+  --link-text-color: #fa921b;
 }
 
 body {
@@ -26,11 +27,18 @@ section {
 
 a {
   text-decoration: none;
+  color: var(--nav-text-color);
 }
 
-/* ----------- NAV 01 -----------  */
+a:hover {
+  color: var(--link-text-color);
+}
+
+/* ----------- SECTION 01 -----------  */
 .nav01,
-.nav02 {
+.nav02,
+.nav03,
+.nav04 {
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -43,21 +51,26 @@ a {
 }
 
 .ul01,
-.ul02 {
+.ul02,
+.ul03,
+.ul04 {
   display: flex;
   list-style: none;
   gap: 3rem;
 }
 
 .logo01,
-.logo02 {
+.logo02,
+.logo03,
+.logo04 {
   width: 140px;
   height: auto;
   background-repeat: no-repeat;
 }
 
 .button01,
-.button02 {
+.button02,
+.button03 {
   display: inline-flex;
   justify-content: center;
   align-items: center;
@@ -70,9 +83,19 @@ a {
   color: var(--button-text-color);
 }
 
-/* ----------- NAV 02 -----------  */
-.ul02 {
+/* ----------- SECTION 02 -----------  */
+.ul02,
+.ul03,
+.ul04 {
   align-items: center;
 }
 
-/* ----------- NAV 03 -----------  */
+/* ----------- SECTION 03 -----------  */
+.nav03 {
+  flex-direction: row-reverse;
+}
+
+/* ----------- SECTION 04 -----------  */
+.nav04 {
+  justify-content: center;
+}
